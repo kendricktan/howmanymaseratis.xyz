@@ -69,7 +69,10 @@ function App() {
           <tr>
             <td style={{ textAlign: "left" }}>Today</td>
             <td style={{ textAlign: "right" }}>
-              {(initialUSDAmount + pl).toFixed(2).toString()} USD
+              {snxPriceUSD === null
+                ? "..."
+                : (initialUSDAmount + pl).toFixed(2).toString()}{" "}
+              USD
             </td>
           </tr>
           <tr>
